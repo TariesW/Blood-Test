@@ -1,0 +1,446 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf840
+{\fonttbl\f0\fnil\fcharset0 Monaco;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red255\green255\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c100000;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl340\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 tbl_regression(m1)\
+> summary(m1)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b7\'c7\'b8\'c6\'bb\'af\'b9\'da\'c2\'f6
+\f0  ~ FG + TG + TC, family = "binomial", \
+    data = bloodtest2_0)\
+\
+Deviance Residuals: \
+   Min      1Q  Median      3Q     Max  \
+-1.998  -1.057  -0.813   1.145   1.717  \
+\
+Coefficients:\
+            Estimate Std. Error z value Pr(>|z|)    \
+(Intercept) -3.60290    0.86410  -4.170 3.05e-05 ***\
+FG           0.43540    0.11973   3.637 0.000276 ***\
+TG          -0.03754    0.13673  -0.275 0.783638    \
+TC           0.22185    0.09384   2.364 0.018075 *  \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 361.18  on 260  degrees of freedom\
+Residual deviance: 338.66  on 257  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 346.66\
+\
+Number of Fisher Scoring iterations: 4\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m2)\
+> summary(m2)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b7\'c7\'b8\'c6\'bb\'af\'b9\'da\'c2\'f6
+\f0  ~ FG + TG + TC + HDLC + \
+    LDLC + SBP + DBP, family = "binomial", data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-2.0535  -1.0266  -0.8024   1.1771   1.7832  \
+\
+Coefficients:\
+             Estimate Std. Error z value Pr(>|z|)   \
+(Intercept) -3.987696   1.745673  -2.284   0.0224 * \
+FG           0.374955   0.126350   2.968   0.0030 **\
+TG          -0.050860   0.138671  -0.367   0.7138   \
+TC           0.233597   0.099280   2.353   0.0186 * \
+HDLC         0.016264   0.188293   0.086   0.9312   \
+LDLC        -0.044370   0.204062  -0.217   0.8279   \
+SBP          0.017952   0.009634   1.863   0.0624 . \
+DBP         -0.019622   0.019220  -1.021   0.3073   \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 361.18  on 260  degrees of freedom\
+Residual deviance: 334.95  on 253  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 350.95\
+\
+Number of Fisher Scoring iterations: 4\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m3)\
+> summary(m3)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b7\'c7\'b8\'c6\'bb\'af\'b9\'da\'c2\'f6
+\f0  ~ FG + TG + TC + HDLC + \
+    LDLC + SBP + DBP + +UricAcid + Creatine, family = "binomial", \
+    data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-1.9813  -1.0119  -0.7579   1.1367   1.8276  \
+\
+Coefficients:\
+             Estimate Std. Error z value Pr(>|z|)   \
+(Intercept) -2.441241   2.058294  -1.186  0.23560   \
+FG           0.362196   0.127385   2.843  0.00446 **\
+TG          -0.089805   0.142629  -0.630  0.52893   \
+TC           0.248724   0.102061   2.437  0.01481 * \
+HDLC         0.103471   0.190455   0.543  0.58693   \
+LDLC         0.016889   0.209836   0.080  0.93585   \
+SBP          0.016524   0.009749   1.695  0.09007 . \
+DBP         -0.024817   0.019690  -1.260  0.20753   \
+UricAcid    -0.174826   0.082952  -2.108  0.03507 * \
+Creatine    -0.002210   0.009801  -0.225  0.82159   \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 361.18  on 260  degrees of freedom\
+Residual deviance: 330.26  on 251  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 350.26\
+\
+Number of Fisher Scoring iterations: 4\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m4)\
+> summary(m4)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b7\'c7\'b8\'c6\'bb\'af\'cd\'b7\'be\'b1
+\f0  ~ FG + TG + TC, family = "binomial", \
+    data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-0.7938  -0.4563  -0.3988  -0.3357   2.6300  \
+\
+Coefficients:\
+            Estimate Std. Error z value Pr(>|z|)   \
+(Intercept) -3.81434    1.23471  -3.089  0.00201 **\
+FG           0.34601    0.17031   2.032  0.04219 * \
+TG          -0.27937    0.29962  -0.932  0.35113   \
+TC          -0.01901    0.12621  -0.151  0.88030   \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 155.65  on 260  degrees of freedom\
+Residual deviance: 150.10  on 257  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 158.1\
+\
+Number of Fisher Scoring iterations: 5\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m5)\
+> summary(m5)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b7\'c7\'b8\'c6\'bb\'af\'cd\'b7\'be\'b1
+\f0  ~ FG + TG + TC + HDLC + \
+    LDLC + SBP + DBP, family = "binomial", data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-1.0047  -0.4566  -0.3760  -0.3043   2.7384  \
+\
+Coefficients:\
+            Estimate Std. Error z value Pr(>|z|)   \
+(Intercept) -7.61255    2.67806  -2.843  0.00448 **\
+FG           0.28337    0.18643   1.520  0.12852   \
+TG          -0.25890    0.30938  -0.837  0.40269   \
+TC          -0.01057    0.13685  -0.077  0.93841   \
+HDLC        -0.13983    0.34518  -0.405  0.68541   \
+LDLC         0.12818    0.35094   0.365  0.71493   \
+SBP          0.01160    0.01546   0.750  0.45313   \
+DBP          0.03231    0.02824   1.144  0.25252   \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 155.65  on 260  degrees of freedom\
+Residual deviance: 147.23  on 253  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 163.23\
+\
+Number of Fisher Scoring iterations: 6\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m6)\
+> summary(m6)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b7\'c7\'b8\'c6\'bb\'af\'cd\'b7\'be\'b1
+\f0  ~ FG + TG + TC + HDLC + \
+    LDLC + SBP + DBP + +UricAcid + Creatine, family = "binomial", \
+    data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-1.0173  -0.4579  -0.3701  -0.3078   2.6691  \
+\
+Coefficients:\
+             Estimate Std. Error z value Pr(>|z|)  \
+(Intercept) -7.456749   3.226849  -2.311   0.0208 *\
+FG           0.279588   0.187022   1.495   0.1349  \
+TG          -0.256703   0.308813  -0.831   0.4058  \
+TC          -0.007110   0.137892  -0.052   0.9589  \
+HDLC        -0.164365   0.355654  -0.462   0.6440  \
+LDLC         0.124352   0.354084   0.351   0.7254  \
+SBP          0.011830   0.015470   0.765   0.4445  \
+DBP          0.031786   0.028814   1.103   0.2700  \
+UricAcid     0.049471   0.142832   0.346   0.7291  \
+Creatine    -0.006008   0.017052  -0.352   0.7246  \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 155.65  on 260  degrees of freedom\
+Residual deviance: 146.98  on 251  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 166.98\
+\
+Number of Fisher Scoring iterations: 6\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m7)\
+> summary(m7)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b8\'c6\'bb\'af\'b9\'da\'c2\'f6
+\f0  ~ FG + TG + TC, family = "binomial", \
+    data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-1.6472  -0.8613  -0.7166   1.2146   1.9872  \
+\
+Coefficients:\
+            Estimate Std. Error z value Pr(>|z|)    \
+(Intercept) -4.19644    0.83431  -5.030 4.91e-07 ***\
+FG           0.46595    0.11958   3.896 9.76e-05 ***\
+TG           0.09344    0.13894   0.672   0.5013    \
+TC           0.13525    0.07863   1.720   0.0854 .  \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 333.63  on 260  degrees of freedom\
+Residual deviance: 312.00  on 257  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 320\
+\
+Number of Fisher Scoring iterations: 4\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m8)\
+> summary(m8)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b8\'c6\'bb\'af\'b9\'da\'c2\'f6
+\f0  ~ FG + TG + TC + HDLC + \
+    LDLC + SBP + DBP, family = "binomial", data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-1.7597  -0.8339  -0.6949   1.1090   1.8969  \
+\
+Coefficients:\
+             Estimate Std. Error z value Pr(>|z|)    \
+(Intercept) -6.288496   1.814546  -3.466 0.000529 ***\
+FG           0.363671   0.126061   2.885 0.003916 ** \
+TG           0.091280   0.143038   0.638 0.523371    \
+TC           0.125029   0.084470   1.480 0.138829    \
+HDLC         0.025223   0.195655   0.129 0.897425    \
+LDLC         0.164742   0.211773   0.778 0.436617    \
+SBP          0.022714   0.009923   2.289 0.022077 *  \
+DBP         -0.007930   0.020165  -0.393 0.694123    \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 333.63  on 260  degrees of freedom\
+Residual deviance: 305.95  on 253  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 321.95\
+\
+Number of Fisher Scoring iterations: 4\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m9)\
+> summary(m9)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b8\'c6\'bb\'af\'b9\'da\'c2\'f6
+\f0  ~ FG + TG + TC + HDLC + \
+    LDLC + SBP + DBP + +UricAcid + Creatine, family = "binomial", \
+    data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-1.6868  -0.8411  -0.6882   1.1054   1.9741  \
+\
+Coefficients:\
+             Estimate Std. Error z value Pr(>|z|)   \
+(Intercept) -5.419705   2.135744  -2.538  0.01116 * \
+FG           0.359180   0.126687   2.835  0.00458 **\
+TG           0.072638   0.144953   0.501  0.61629   \
+TC           0.130461   0.084782   1.539  0.12386   \
+HDLC         0.026438   0.198270   0.133  0.89392   \
+LDLC         0.172757   0.213084   0.811  0.41751   \
+SBP          0.022344   0.009951   2.246  0.02474 * \
+DBP         -0.010528   0.020497  -0.514  0.60753   \
+UricAcid     0.008827   0.085455   0.103  0.91773   \
+Creatine    -0.010197   0.010356  -0.985  0.32480   \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 333.63  on 260  degrees of freedom\
+Residual deviance: 304.98  on 251  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 324.98\
+\
+Number of Fisher Scoring iterations: 4\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m10)\
+> summary(m10)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b8\'c6\'bb\'af\'cd\'b7\'be\'b1
+\f0  ~ FG + TG + TC, family = "binomial", \
+    data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-0.7346  -0.5261  -0.4886  -0.4456   2.2274  \
+\
+Coefficients:\
+            Estimate Std. Error z value Pr(>|z|)   \
+(Intercept) -3.06575    1.05765  -2.899  0.00375 **\
+FG           0.21593    0.15244   1.417  0.15662   \
+TG           0.05639    0.19588   0.288  0.77345   \
+TC          -0.04758    0.10741  -0.443  0.65777   \
+---\
+Signif. codes:  0 \'91***\'92 0.001 \'91**\'92 0.01 \'91*\'92 0.05 \'91.\'92 0.1 \'91 \'92 1\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 194.23  on 260  degrees of freedom\
+Residual deviance: 192.17  on 257  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 200.17\
+\
+Number of Fisher Scoring iterations: 4\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m11)\
+> summary(m11)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b8\'c6\'bb\'af\'cd\'b7\'be\'b1
+\f0  ~ FG + TG + TC + HDLC + \
+    LDLC + SBP + DBP, family = "binomial", data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-0.8730  -0.5206  -0.4717  -0.4238   2.3446  \
+\
+Coefficients:\
+            Estimate Std. Error z value Pr(>|z|)\
+(Intercept) -3.49317    2.43946  -1.432    0.152\
+FG           0.12325    0.16552   0.745    0.457\
+TG           0.03446    0.20382   0.169    0.866\
+TC          -0.07718    0.11889  -0.649    0.516\
+HDLC         0.19958    0.20591   0.969    0.332\
+LDLC         0.08157    0.27880   0.293    0.770\
+SBP          0.01606    0.01351   1.188    0.235\
+DBP         -0.01896    0.02867  -0.661    0.508\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 194.23  on 260  degrees of freedom\
+Residual deviance: 189.86  on 253  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 205.86\
+\
+Number of Fisher Scoring iterations: 5\
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \strokec2 > tbl_regression(m12)\
+> summary(m12)\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf4 \strokec4 \
+Call:\
+glm(formula = bloodtest2_0$
+\f1 \'b8\'c6\'bb\'af\'cd\'b7\'be\'b1
+\f0  ~ FG + TG + TC + HDLC + \
+    LDLC + SBP + DBP + +UricAcid + Creatine, family = "binomial", \
+    data = bloodtest2_0)\
+\
+Deviance Residuals: \
+    Min       1Q   Median       3Q      Max  \
+-0.8902  -0.5499  -0.4553  -0.4028   2.3375  \
+\
+Coefficients:\
+            Estimate Std. Error z value Pr(>|z|)\
+(Intercept) -2.32804    2.89509  -0.804    0.421\
+FG           0.11952    0.16477   0.725    0.468\
+TG           0.01430    0.20463   0.070    0.944\
+TC          -0.07047    0.11844  -0.595    0.552\
+HDLC         0.18784    0.20899   0.899    0.369\
+LDLC         0.10013    0.27901   0.359    0.720\
+SBP          0.01578    0.01354   1.165    0.244\
+DBP         -0.02304    0.02924  -0.788    0.431\
+UricAcid     0.02593    0.11955   0.217    0.828\
+Creatine    -0.01508    0.01426  -1.058    0.290\
+\
+(Dispersion parameter for binomial family taken to be 1)\
+\
+    Null deviance: 194.23  on 260  degrees of freedom\
+Residual deviance: 188.71  on 251  degrees of freedom\
+  (1 observation deleted due to missingness)\
+AIC: 208.71\
+\
+Number of Fisher Scoring iterations: 5\
+}
